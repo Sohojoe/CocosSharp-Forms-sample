@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{2E34F5CD-5DE1-4EDB-BEF2-BB6F5715FA8E}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>TestCocosShared</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)CCPhysicsSprite.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)GameLayer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)GameOverLayer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)GameStartLayer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)GoneBananasApplicationDelegate.cs" />
+  </ItemGroup>
+</Project>

@@ -11,7 +11,7 @@ namespace GoneBananas
             application.PreferMultiSampling = false;
             application.ContentRootDirectory = "Content";
 
-            mainWindow.SupportedDisplayOrientations = CCDisplayOrientation.Portrait;
+			mainWindow.SupportedDisplayOrientations = CCDisplayOrientation.Portrait | CCDisplayOrientation.PortraitDown;
 
             application.ContentSearchPaths.Add("hd");
 

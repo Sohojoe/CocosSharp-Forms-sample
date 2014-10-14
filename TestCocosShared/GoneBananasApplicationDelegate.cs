@@ -11,14 +11,13 @@ namespace GoneBananas
             application.PreferMultiSampling = false;
             application.ContentRootDirectory = "Content";
 
-			mainWindow.SupportedDisplayOrientations = CCDisplayOrientation.Portrait | CCDisplayOrientation.PortraitDown;
-
             application.ContentSearchPaths.Add("hd");
 
             CCSimpleAudioEngine.SharedEngine.PreloadEffect ("Sounds/tap");
 
             CCScene scene = GameStartLayer.GameStartLayerScene(mainWindow);
             mainWindow.RunWithScene (scene);
+
         }
 
         public override void ApplicationDidEnterBackground (CCApplication application)

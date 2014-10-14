@@ -15,6 +15,8 @@ namespace GoneBananas
 
 			Color = CCColor3B.DarkGray;
 			Opacity = 255;
+
+
 		}
 
 		protected override void AddedToScene ()

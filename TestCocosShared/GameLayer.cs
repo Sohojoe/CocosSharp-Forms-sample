@@ -86,7 +86,7 @@ namespace GoneBananas
 				if (ShouldEndGame ()) {
 					EndGame ();
 				}
-				AddBall ();
+				//AddBall ();
 			}, 1.0f);
 
 			Schedule (t => CheckCollision ());
@@ -230,6 +230,14 @@ namespace GoneBananas
 
 		void Explode (CCPoint pt)
 		{
+			string[] effectArray = {"boom.plist", "starTest.plist", null};
+			foreach (var effectName in effectArray) {        
+				var effect = new CCParticleSystemQuad ("starTest.plist");
+				effect.Position = pt;
+				AddChild (effect, 10000);
+			}
+			return;
+
 			var explosion = new CCParticleExplosion (pt); //TODO: manage "better" for performance when "many" particles
 			explosion.TotalParticles = 10;
 			explosion.AutoRemoveOnFinish = true;
@@ -276,7 +284,11 @@ namespace GoneBananas
 			circleNode.Position = sun.Position;
 
 			AddClouds ();
+
+			effect = new CCParticleSystemQuad ("boom.plist");
+			AddChild (effect);
 		}
+		CCParticleSystem effect;
 
 		void InitPhysics ()
 		{

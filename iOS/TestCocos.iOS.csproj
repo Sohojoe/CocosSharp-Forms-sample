@@ -92,32 +92,32 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="monotouch" />
-    <Reference Include="Xamarin.Forms.Platform.iOS">
-      <HintPath>..\packages\Xamarin.Forms.1.2.2.6243\lib\MonoTouch10\Xamarin.Forms.Platform.iOS.dll</HintPath>
-    </Reference>
-    <Reference Include="Xamarin.Forms.Core">
-      <HintPath>..\packages\Xamarin.Forms.1.2.2.6243\lib\MonoTouch10\Xamarin.Forms.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Xamarin.Forms.Xaml">
-      <HintPath>..\packages\Xamarin.Forms.1.2.2.6243\lib\MonoTouch10\Xamarin.Forms.Xaml.dll</HintPath>
-    </Reference>
     <Reference Include="CocosSharp">
-      <HintPath>..\packages\CocosSharp.iOS.1.0.1.0\lib\MonoTouch10\CocosSharp.dll</HintPath>
+      <HintPath>..\packages\CocosSharp.iOS.1.1.0.0\lib\MonoTouch10\CocosSharp.dll</HintPath>
     </Reference>
     <Reference Include="ICSharpCode.SharpZipLib">
-      <HintPath>..\packages\CocosSharp.iOS.1.0.1.0\lib\MonoTouch10\ICSharpCode.SharpZipLib.dll</HintPath>
+      <HintPath>..\packages\CocosSharp.iOS.1.1.0.0\lib\MonoTouch10\ICSharpCode.SharpZipLib.dll</HintPath>
     </Reference>
     <Reference Include="Lidgren.Network">
-      <HintPath>..\packages\CocosSharp.iOS.1.0.1.0\lib\MonoTouch10\Lidgren.Network.dll</HintPath>
+      <HintPath>..\packages\CocosSharp.iOS.1.1.0.0\lib\MonoTouch10\Lidgren.Network.dll</HintPath>
     </Reference>
     <Reference Include="MonoGame.Framework.Net">
-      <HintPath>..\packages\CocosSharp.iOS.1.0.1.0\lib\MonoTouch10\MonoGame.Framework.Net.dll</HintPath>
+      <HintPath>..\packages\CocosSharp.iOS.1.1.0.0\lib\MonoTouch10\MonoGame.Framework.Net.dll</HintPath>
     </Reference>
     <Reference Include="MonoGame.Framework">
-      <HintPath>..\packages\CocosSharp.iOS.1.0.1.0\lib\MonoTouch10\MonoGame.Framework.dll</HintPath>
+      <HintPath>..\packages\CocosSharp.iOS.1.1.0.0\lib\MonoTouch10\MonoGame.Framework.dll</HintPath>
     </Reference>
     <Reference Include="box2d">
-      <HintPath>..\packages\CocosSharp.iOS.1.0.1.0\lib\MonoTouch10\box2d.dll</HintPath>
+      <HintPath>..\packages\CocosSharp.iOS.1.1.0.0\lib\MonoTouch10\box2d.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform.iOS">
+      <HintPath>..\packages\Xamarin.Forms.1.2.3.6257\lib\MonoTouch10\Xamarin.Forms.Platform.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Core">
+      <HintPath>..\packages\Xamarin.Forms.1.2.3.6257\lib\MonoTouch10\Xamarin.Forms.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Xaml">
+      <HintPath>..\packages\Xamarin.Forms.1.2.3.6257\lib\MonoTouch10\Xamarin.Forms.Xaml.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -135,6 +135,9 @@
     <BundleResource Include="Content\fonts\arial-22.xnb" />
     <BundleResource Include="Content\hd\animations\monkey.plist" />
     <BundleResource Include="Content\Sounds\tap.mp3" />
+    <BundleResource Include="Content\Particles\boom.plist" />
+    <BundleResource Include="Content\Particles\starTest.plist" />
+    <BundleResource Include="Content\Particles\starTest.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -147,7 +150,7 @@
   </ItemGroup>
   <Import Project="..\TestCocosShared\TestCocosShared.projitems" Label="Shared" Condition="Exists('..\TestCocosShared\TestCocosShared.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.MonoTouch.CSharp.targets" />
-  <Import Project="..\packages\Xamarin.Forms.1.2.2.6243\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.1.2.2.6243\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10\Xamarin.Forms.targets')" />
+  <Import Project="..\packages\Xamarin.Forms.1.2.3.6257\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.1.2.3.6257\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10\Xamarin.Forms.targets')" />
   <ItemGroup>
     <Folder Include="Content\" />
   </ItemGroup>

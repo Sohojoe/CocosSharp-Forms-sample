@@ -230,9 +230,9 @@ namespace GoneBananas
 
 		void Explode (CCPoint pt)
 		{
-			string[] effectArray = {"boom.plist", "starTest.plist", null};
+			string[] effectArray = {"starTest.plist", "boom.plist"};
 			foreach (var effectName in effectArray) {        
-				var effect = new CCParticleSystemQuad ("starTest.plist");
+				var effect = new CCParticleSystemQuad (effectName);
 				effect.Position = pt;
 				AddChild (effect, 10000);
 			}
@@ -285,8 +285,8 @@ namespace GoneBananas
 
 			AddClouds ();
 
-			effect = new CCParticleSystemQuad ("boom.plist");
-			AddChild (effect);
+//			effect = new CCParticleSystemQuad ("boom.plist");
+//			AddChild (effect);
 		}
 		CCParticleSystem effect;
 

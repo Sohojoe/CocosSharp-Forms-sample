@@ -11,7 +11,8 @@ namespace GoneBananas
             application.PreferMultiSampling = false;
             application.ContentRootDirectory = "Content";
 
-            application.ContentSearchPaths.Add("hd");
+			application.ContentSearchPaths.Add("hd");
+			application.ContentSearchPaths.Add("Particles");
 
             CCSimpleAudioEngine.SharedEngine.PreloadEffect ("Sounds/tap");
 

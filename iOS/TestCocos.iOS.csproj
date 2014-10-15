@@ -137,6 +137,7 @@
     <BundleResource Include="Content\Sounds\tap.mp3" />
     <BundleResource Include="Content\Particles\boom.plist" />
     <BundleResource Include="Content\Particles\starTest.plist" />
+    <BundleResource Include="Content\Particles\exp1.plist" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />

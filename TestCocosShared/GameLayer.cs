@@ -230,7 +230,7 @@ namespace GoneBananas
 
 		void Explode (CCPoint pt)
 		{
-			string[] effectArray = {"starTest.plist", "boom.plist"};
+			string[] effectArray = {"boom.plist", "starTest.plist"};
 			foreach (var effectName in effectArray) {        
 				var effect = new CCParticleSystemQuad (effectName);
 				effect.Position = pt;

@@ -44,11 +44,24 @@ namespace TestCocos.iOS
 			}
 		}
 */
+
+
+		public static CCApplication CCApplication;
 		public override void FinishedLaunching (UIApplication app)
 		{
-			var application = new CCApplication ();
-			application.ApplicationDelegate = new GoneBananasApplicationDelegate ();
-			application.StartGame ();
+			CCApplication = new CCApplication ();
+//			CCApplication.ApplicationDelegate = new GoneBananasApplicationDelegate ();
+//			CCApplication.StartGame ();
+
+			Forms.Init ();
+			window = new UIWindow (UIScreen.MainScreen.Bounds);
+			window.RootViewController = App.GetMainPage ().CreateViewController ();
+			//window.RootViewController =  new CocosPage().CreateViewController ();
+			window.MakeKeyAndVisible ();
+
+
+
+
 		}
 	}
 }

@@ -16,7 +16,8 @@ namespace GoneBananas
 
             CCSimpleAudioEngine.SharedEngine.PreloadEffect ("Sounds/tap");
 
-            CCScene scene = GameStartLayer.GameStartLayerScene(mainWindow);
+//			CCScene scene = GameStartLayer.GameStartLayerScene(mainWindow);
+			CCScene scene = GameLayer.GameScene(mainWindow);
             mainWindow.RunWithScene (scene);
 
         }

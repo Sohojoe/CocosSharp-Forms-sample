@@ -147,6 +147,7 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
+    <Compile Include="CocosPageIosRenderer.cs" />
   </ItemGroup>
   <Import Project="..\TestCocosShared\TestCocosShared.projitems" Label="Shared" Condition="Exists('..\TestCocosShared\TestCocosShared.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.MonoTouch.CSharp.targets" />

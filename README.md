@@ -4,11 +4,13 @@ CocosSharp-Forms-sample
 Createing a sample project which has both CocosSharp and Xamarin Forms in the same project
 
 WORK IN PROGRESS
-+ DONE: CocosSharp & Xamarin Form compile in the same project
++ DONE: CocosSharp & Xamarin Form compile in the same project; Boots in Forms, clicks into CososSharp
 + DONE: Implement Particle Systems exported from https://71squared.com/particledesigner
 + DONE: iOS
++ TODO: Exit from cocos back to forms.
 + TODO: Display both CocosSharp and Xamarin Forms at the same time
 + TODO: Test on Android
+
 
 
 License
